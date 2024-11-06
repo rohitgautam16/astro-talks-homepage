@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+.nav-link {
+  @apply text-black hover:text-gray-600 transition-colors duration-200;
+}
+
+.feature-card {
+  @apply bg-beige p-8 rounded-lg transition-transform duration-300 hover:scale-105 flex flex-col items-center;
+}
